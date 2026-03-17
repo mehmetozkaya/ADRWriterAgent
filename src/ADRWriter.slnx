@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="ADRWriter.ApiService/ADRWriter.ApiService.csproj" />
+  <Project Path="ADRWriter.AppHost/ADRWriter.AppHost.csproj" />
+  <Project Path="ADRWriter.ServiceDefaults/ADRWriter.ServiceDefaults.csproj" />
+  <Project Path="ADRWriter.Web/ADRWriter.Web.csproj" />
+</Solution>

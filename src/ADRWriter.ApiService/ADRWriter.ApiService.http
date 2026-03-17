@@ -1,0 +1,10 @@
+@ApiService_HostAddress = http://localhost:5485
+
+POST {{ApiService_HostAddress}}/write
+Content-Type: application/json
+
+{
+  "context": "We need to decide whether to use PostgreSQL or MongoDB as the primary database for our new microservice that handles product catalog data. The service needs to support complex queries, full-text search, and handle approximately 10,000 requests per minute. The team has more experience with relational databases."
+}
+
+###
