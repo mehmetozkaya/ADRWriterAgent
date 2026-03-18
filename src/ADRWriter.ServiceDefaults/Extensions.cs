@@ -57,13 +57,13 @@ public static class Extensions
             {
                 metrics.AddAspNetCoreInstrumentation()
                     .AddHttpClientInstrumentation()
-                    .AddRuntimeInstrumentation()
-                    .AddMeter("Microsoft.Extensions.AI");
+                    .AddRuntimeInstrumentation();                    
             })
             .WithTracing(tracing =>
             {
                 tracing.AddSource(builder.Environment.ApplicationName)
                     .AddSource("Microsoft.Extensions.AI")
+                    .AddSource("*Microsoft.Extensions.Agents*")
                     .AddAspNetCoreInstrumentation(tracing =>
                         // Exclude health check requests from tracing
                         tracing.Filter = context =>
